@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-escuro: #151D27;
+  --azul-marinho: #0A2239;
+  --laranja: #F49200;
+  --branco: #fefefe;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--azul-marinho);
+  background-image: url(../imgs/background/fundo_formulario.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Gabarito", "Arial", sans-serif;
+  font-size: 17px; /* 🔥 aumento global */
+}
+
+/* Voltar */
+.voltar {
+  position: fixed;
+  top: 28px;
+  right: 36px;
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.voltar:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}
+
+/* Card */
+.form-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 48px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.logo-area img {
+  height: 60px;
+}
+
+.logo-area span {
+  font-size: 3.2rem; /* 🔥 leve aumento */
+  font-weight: 700;
+  color: var(--branco);
+  font-family: "Anton SC", "Arial", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Subtítulo */
+.form-subtitle {
+  color: rgba(255,255,255,0.75);
+  font-size: 1rem; /* 🔥 maior */
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+/* Form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 🔥 mais respiro */
+}
+
+/* Inputs */
+.input-field {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px 46px 15px 20px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: var(--branco);
+  font-size: 1rem; /* 🔥 maior */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.input-field input:focus {
+  border-color: var(--laranja);
+}
+
+.input-field .field-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem; /* 🔥 proporcional */
+  color: white;
+}
+
+/* Esqueceu */
+.forgot {
+  color: white;
+  font-size: 0.9rem; /* 🔥 maior */
+  text-align: center;
+  text-decoration: none;
+  margin-top: -2px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.forgot:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}
+
+/* Botão */
+.btn-primary {
+  width: 300px;
+  margin: 12px auto 0;
+  padding: 15px;
+  background: var(--laranja);
+  border: none;
+  border-radius: 100px;
+  color: var(--branco);
+  font-size: 1.05rem; /* 🔥 destaque */
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Rodapé */
+.form-footer {
+  margin-top: 22px;
+  color: white;
+  font-size: 0.95rem; /* 🔥 maior */
+  text-align: center;
+}
+
+.form-footer span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Link */
+.form-footer a {
+  display: inline-block;
+  color: var(--laranja);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.form-footer a:hover {
+  border-color: var(--laranja);
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
