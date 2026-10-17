@@ -1,84 +1,537 @@
 # 🎮 Iara Games
 
-Primeiro projeto em grupo com foco na criação de um protótipo de plataforma de distribuição de jogos digitais voltada ao público brasileiro, utilizando **HTML** e **CSS**.
+Protótipo de uma plataforma brasileira de distribuição de jogos digitais, desenvolvido em grupo com foco em **experiência do usuário, identidade visual e interatividade front-end**.
+
+O projeto começou como uma interface estática construída com **HTML e CSS** e evoluiu, nesta Sprint, para uma experiência interativa utilizando **JavaScript e manipulação do DOM (Document Object Model)**.
 
 ---
 
 ## 👥 Integrantes
-- Leonardo Franco Arakaki  
-- Murilo de Melo Sousa  
-- Samuel Liasch Alves  
-- Walisson Souza dos Santos  
+
+* Leonardo Franco Arakaki
+* Murilo de Melo Sousa
+* Samuel Liasch Alves
+* Walisson Souza dos Santos
 
 ---
 
-## 📌 Contexto
+## 📌 Sobre o projeto
 
-A presença de jogadores de videogame no Brasil teve um crescimento enorme na última década, 82,8% da população brasileira consome alguma forma de jogos digitais segundo a Pesquisa Game Brasil (PGB)
-Tendo em vista esse público cada vez maior de pessoas interessadas por jogos numa indústria que já gera mais lucro do que as indústrias de cinema e música o projeto da Iara games trouxe como objetivo, criar um protótipo de uma plataforma de games dentro do contexto nacional do Brasil, não somente para distribuição de jogos de uma maneira que conecte com a fanbase brasileira de jogos mas também uma plataforma que visa elevar o perfil e dar destaques para criadores de jogos nacionais ou jogos que possuem uma equipe com uma forte presença brasileira.  
+O **Iara Games** é um protótipo de plataforma de distribuição de jogos digitais voltada ao público brasileiro.
+
+A proposta é conectar a comunidade nacional de jogadores a um catálogo de títulos, dando destaque especial a jogos desenvolvidos por criadores brasileiros ou por equipes com forte presença brasileira.
+
+O projeto busca unir a linguagem visual de grandes plataformas de distribuição digital, como **Steam, Epic Games, Nintendo eShop e PlayStation Store**, com uma identidade visual própria inspirada na cultura brasileira, na lenda da Iara e em elementos relacionados às águas e à natureza brasileira.
 
 ---
 
 ## 💡 Proposta
 
-Dentro desse escopo foram pensadas maneiras de evidenciar essa influência brasileira no próprio design do site e da marca, e com isso usar cores mais quentes que refletem a natureza e cultura desse país que é resultado de uma miscigenação de diversas culturas em um pacote unicamente brasileiro, assim como a própria lenda da Iara que a maneira como conhecemos hoje é uma mistura da cultura indígena local com o folclore dos navegadores portugueses que vieram para a região de uma forma tão intrínseca que é impossível identificar as características originais da lenda.
-Com isso na parte de design foram observados outros sites de vendas de jogos digitais para aprender a linguagem que esse tipo de design pede (Os sites utilizados para pesquisa foram Steam, Epic Games, Nintendo EShop e PlayStation Shop) e na parte de identidade visual do site buscou-se apresentar algo que refletisse o calor brasileiro ainda remetendo a um aspecto voltado pras águas brasileiras e a imagem de uma Vitória Régia, uma planta que é um ícone da vegetação amazônica e também banhada nesse aspecto folclórico que o nome Iara Games procura apresentar.
+O Iara Games foi pensado para funcionar como um mediador entre jogadores e publicadoras de jogos digitais, oferecendo uma experiência de descoberta, navegação e visualização de produtos.
+
+A interface foi desenvolvida considerando padrões encontrados em plataformas consolidadas de distribuição de jogos, mantendo uma organização baseada em:
+
+* Carrossel de jogos em destaque;
+* Vitrines de produtos;
+* Categorias;
+* Ofertas;
+* Página individual de jogos;
+* Avaliações de usuários;
+* Sistema de favoritos;
+* Carrinho;
+* Login e cadastro;
+* Personalização de preferências.
+
+Além da estrutura visual, a Sprint atual teve como objetivo transformar a interface anteriormente estática em uma experiência capaz de **responder às ações do usuário em tempo real**.
 
 ---
 
-## 🎨 Identidade Visual
+# 🎨 Identidade Visual
 
-O projeto partiu da ideia de tentar unir elementos da natureza com ícones do mundo gamer então depois de algumas diferentes interpretações nos chegamos a um logo que mistura a Vitória Régia pelos motivos explicados anteriormente com o símbolo de desligar que é algo extremamente representativo de eletrônicos para criar uma forma que representa um “G” e uma barra de vida a sua esquerda representando o “I”, esse tema de vitória régia
-também é adotado para um plano de fundo do site que criam formas orgânicas e dar uma cara própria para a marca relacionada com a Mãe das águas.  
+A identidade do Iara Games procura unir elementos da natureza brasileira com referências do universo gamer.
 
-![Preview do Site](/imgs/readme/logotipo.png)
+O logotipo combina a representação de uma **Vitória-Régia** com o símbolo de desligar, criando uma forma associada à letra **G**, enquanto um elemento lateral representa o **I**.
 
----
+A Vitória-Régia também aparece como referência visual em elementos da interface, reforçando a associação da marca com as águas brasileiras e com a figura folclórica da Iara.
 
-## 🧠 UX (Experiência do Usuário)
-
-Games que guiaram o design do site. Uma das coisas que é uma particularidade de sites de vendas é a necessidade de que os blocos de displays sempre levem ao próximo bloco, sem dar respiro para o usuário, mantendo o usuário engajado com a página aumentando a possibilidade de descoberta, por isso a tela nunca deve ser ocupada por um único display, nem um único display deve ocupar um espaço maior do que a tela.
-Outra coisa observada é em relação aos próprios displays, foi procurado manter o aspect ratio dos displays dentro de um padrão da indústria devido ao fato de que o Iara Games seria um mediador entre o consumidor e as publicadoras de jogos, sendo assim a arte apresentada normalmente segue um padrão para facilitar a inserção do produto na loja por parte das publicadoras.
-Isso só não é o caso quando os sites de venda são diretamente da empresa que desenvolve os jogos sendo vendidos, por exemplo, na EShop a Nintendo as vezes tem displays mais estilizados para seus IPs próprios mas somente usa displays padronizados para jogos de terceiros, no caso da Iara Games não é apresentada nenhuma informação de jogos autorais no projeto então os únicos displays que podem ser fora de padrão seriam os que com informações de ofertas com arte própria do site, como a Spring Sale ou a Midweek Madness da Steam, onde eles produzem arte própria para seus banners o que também chama mais atenção e valoriza aquele espaço de tela.
----
-
-## 🎨 Paleta de Cores
-
-As cores principais do projeto são um amarelo pastel (#EFD47C) e um laranja claro (#EDB25A), não somente para representar esse calor brasileiro mas também para se destacar dos competidores que em sua maioria possuem uma paleta de cores frias com poucas alterações, a paleta ainda conta com highlights em um azul marinho menos saturado (#167B8D), uma cor neutra clara para complementar o azul (#BFEDE9) e uma cor neutra escura mais terrosa (#6E533E) para compor o projeto.
-Uma Paleta para a versão escura do site foi pensada porém ainda não implementada nessa primeira entrega devido a característica da entrega, mas o grupo entende a necessidade de ter essa opção. 
-
-![previw do site](/imgs/readme/paleta.png)
-
-> ⚠️ Uma versão dark mode foi planejada, mas ainda não implementada.
+![Logotipo do Iara Games](/imgs/readme/logotipo.png)
 
 ---
 
-## 🔤 Tipografia
+## 🧠 UX — Experiência do Usuário
 
-As fontes utilizadas foram:
-- Anton: utilizada como uma fonte de impacto para os títulos da página, a fonte é mais blocada que é uma estética muito usada em revistas brasileiras como Veja, SuperInteressante, Quatro Rodas entre outras, então ela se encaixa bem dentro da identidade do projeto e é acessível a pessoas com dislexia;
-- Fira Sans: utilizada para os textos menores por não ser uma fonte com um apelo muito forte como a Anton, é agradável aos olhos e também é uma fonte acessível em relação a dislexia.  
+O design da plataforma foi inspirado em padrões de interfaces de lojas digitais de jogos.
+
+Durante o desenvolvimento, foram analisadas plataformas como:
+
+* Steam;
+* Epic Games Store;
+* Nintendo eShop;
+* PlayStation Store.
+
+Um dos principais objetivos foi manter uma navegação contínua entre os diferentes blocos da página, facilitando a descoberta de novos jogos sem criar grandes espaços vazios ou concentrar toda a atenção em apenas um elemento.
+
+As vitrines também seguem proporções próximas aos padrões utilizados no mercado de distribuição digital, facilitando a apresentação dos jogos e mantendo consistência visual entre diferentes produtos.
+
+Com a implementação do JavaScript, a experiência foi ampliada para permitir que o usuário interaja diretamente com diversos elementos da interface sem precisar recarregar a página.
 
 ---
 
-## 🚀 Tecnologias
+# 🔤 Tipografia
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) 
+As fontes utilizadas no projeto são:
+
+### Anton
+
+Utilizada principalmente em títulos e elementos de maior destaque.
+
+A tipografia possui uma aparência forte e blocada, contribuindo para a identidade visual da plataforma e criando maior impacto nos títulos.
+
+### Fira Sans
+
+Utilizada em textos menores e informações complementares.
+
+A fonte possui uma aparência mais neutra e confortável para leitura, mantendo uma boa relação com a Anton e contribuindo para a acessibilidade da interface.
 
 ---
 
-🔄 Atualizações Recentes
+# ⚙️ Funcionalidades
 
-O projeto passou por uma atualização focada em melhorias de UX e UI, visando uma navegação mais fluida e intuitiva para o usuário. Também foram realizados ajustes na paleta de cores, refinando a identidade visual e garantindo maior consistência entre os elementos da interface.
+A Sprint atual adicionou uma camada de interatividade ao projeto utilizando **JavaScript e manipulação do DOM**.
 
-Além disso, foi estruturada uma persona, permitindo decisões de design mais alinhadas com o público-alvo da plataforma.
+Foram identificados oito comportamentos interativos no projeto, distribuídos em cinco arquivos JavaScript:
 
-Por fim, foram implementadas funcionalidades de login e cadastro, com formulários totalmente funcionais no front-end (sem integração com backend), simulando a experiência real de acesso do usuário.
+```text
+javascript/
+├── carrossel.js
+├── header.js
+├── game.js
+├── login.js
+└── cadastro.js
+```
 
-## Referências
+---
 
-https://store.steampowered.com/<br>
-https://www.nintendo.com/us/store/<br>
-https://www.playstation.com/pt-br/ps5/games/?smcid=pdc%3Apt-br%3Aprimary%20nav%3Amsg-games%3Aps5<br>
-https://store.epicgames.com/pt-BR/?lang=pt-BR 
+## 🎞️ 1. Carrossel de banners
+
+**Página:** `index.html`
+**Arquivo:** `javascript/carrossel.js`
+
+O carrossel da página inicial passou a ser totalmente interativo.
+
+### Funcionalidades
+
+* Título de seção "Em destaque" no mesmo estilo dos demais títulos do site;
+* Banner à esquerda e informações ao lado direito (gêneros em etiquetas, título, traço laranja e descrição);
+* O lado direito do banner se funde com o painel, que tem um tom escuro tirado da própria arte de cada jogo (variável `--tint` em cada slide);
+* Banner e informações formam um único link; ao passar o mouse a imagem amplia levemente e o traço sob o título cresce;
+* Setas anterior/próximo fora do banner (no celular ficam abaixo, ao lado das bolinhas);
+* Bolinhas clicáveis, com a ativa alongada;
+* Rotação infinita: do último slide vai direto para o primeiro (e vice-versa), sem passar pelos demais;
+* Rotação automática a cada 6 segundos, pausada ao passar o mouse ou focar no carrossel;
+* Navegação por teclado (← →) e por toque (deslizar o dedo);
+* Respeita `prefers-reduced-motion`.
+
+Arquivos: `css/carrossel.css`, `javascript/carrossel.js` e a seção `.destaque` do `index.html`.
+
+### Como visualizar
+
+1. Abra `index.html`;
+2. Localize o carrossel principal;
+3. Clique nas setas laterais;
+4. Clique nas bolinhas abaixo do banner;
+5. Teste a navegação até o último slide e avance novamente para verificar o loop infinito.
+
+---
+
+## 🖼️ 2. Galeria de mídia em tela cheia
+
+**Página:** `games/compra.html`
+**Arquivo:** `javascript/game.js`
+
+A página dos jogos recebeu um sistema de visualização ampliada para imagens e vídeos.
+
+### Funcionalidades
+
+* Ampliação das imagens em modal;
+* Visualização do vídeo em destaque;
+* Galeria de mídias;
+* Navegação pelas mídias utilizando setas;
+* Navegação utilizando as teclas `←` e `→`;
+* Contador de posição das mídias;
+* Fechamento pelo botão `×`;
+* Fechamento ao clicar fora da mídia;
+* Fechamento utilizando a tecla `Esc`.
+
+Os elementos utilizados pelos modais e pela galeria são criados dinamicamente através do JavaScript e inseridos no DOM.
+
+### Como visualizar
+
+1. Abra `games/compra.html`;
+2. Localize a seção de mídias do jogo;
+3. Clique em uma das imagens;
+4. Observe a abertura da imagem em tela cheia;
+5. Clique em **"Ver mais mídias"**;
+6. Navegue utilizando as setas da interface;
+7. Teste também as teclas `←` e `→`;
+8. Pressione `Esc` para fechar.
+
+---
+
+## ⭐ 3. Abas e avaliações interativas
+
+**Página:** `games/compra.html`
+**Arquivo:** `javascript/game.js`
+
+A página do jogo possui uma navegação por abas entre informações do produto e avaliações.
+
+### Funcionalidades
+
+* Aba **"Sobre o jogo"**;
+* Aba **"Avaliações"**;
+* Alteração dinâmica do conteúdo exibido;
+* Sistema de curtir avaliações;
+* Sistema de não curtir avaliações;
+* Contadores atualizados em tempo real;
+* Botões de curtir e não curtir mutuamente exclusivos;
+* Expansão e recolhimento da descrição do jogo.
+
+As avaliações são construídas dinamicamente utilizando JavaScript e elementos do DOM.
+
+### Como visualizar
+
+1. Abra `games/compra.html`;
+2. Localize a navegação entre **"Sobre o jogo"** e **"Avaliações"**;
+3. Clique em **"Avaliações"**;
+4. Clique no botão de curtir ou não curtir de uma avaliação;
+5. Observe a alteração imediata do contador;
+6. Clique novamente para remover a interação;
+7. Teste também o botão **"Ver mais"** na descrição do jogo.
+
+---
+
+# 🔄 Outras interações implementadas
+
+Além das três principais funcionalidades apresentadas acima, o projeto possui outras interações utilizando JavaScript.
+
+---
+
+## 📌 Navbar fixa durante a rolagem
+
+**Página:** `index.html`
+**Arquivo:** `javascript/header.js`
+
+A barra de navegação passa a ficar fixa no topo da tela quando o usuário rola a página.
+
+Isso permite que recursos como busca, categorias e navegação permaneçam acessíveis mesmo durante a exploração do catálogo.
+
+### Como visualizar
+
+1. Abra `index.html`;
+2. Role a página para baixo;
+3. Observe a navbar permanecer acessível no topo da tela.
+
+---
+
+## ❤️ Favoritos e 🛒 Carrinho
+
+**Página:** `games/compra.html`
+**Arquivo:** `javascript/game.js`
+
+Os botões de favoritos e carrinho possuem estados interativos.
+
+Ao clicar:
+
+* O ícone altera seu estado visual;
+* Uma notificação aparece na tela;
+* A mensagem confirma a ação realizada;
+* A notificação desaparece automaticamente após alguns segundos.
+
+### Como visualizar
+
+1. Abra `games/compra.html`;
+2. Localize os botões de favorito e carrinho;
+3. Clique em um deles;
+4. Observe a alteração do ícone;
+5. Observe a notificação exibida na tela.
+
+---
+
+## 📖 Expandir e recolher descrição
+
+**Página:** `games/compra.html`
+**Arquivo:** `javascript/game.js`
+
+Descrições extensas são inicialmente limitadas para evitar que a página fique excessivamente longa.
+
+O botão **"Ver mais"** permite expandir o conteúdo, enquanto **"Ver menos"** permite recolhê-lo novamente.
+
+### Como visualizar
+
+1. Abra `games/compra.html`;
+2. Localize a descrição do jogo;
+3. Clique em **"Ver mais"**;
+4. Observe a expansão do conteúdo;
+5. Clique em **"Ver menos"** para retornar ao estado original.
+
+---
+
+## 🔐 Mostrar senha e validação de cadastro
+
+**Páginas:**
+
+* `formulario/login.html`
+* `formulario/criar conta.html`
+
+**Arquivos:**
+
+* `javascript/login.js`
+* `javascript/cadastro.js`
+
+Os formulários receberam interações para melhorar o preenchimento e fornecer feedback imediato ao usuário.
+
+### Mostrar e ocultar senha
+
+O ícone de olho permite alternar entre:
+
+```text
+password → text
+```
+
+Dessa forma, o usuário consegue visualizar a senha digitada quando necessário.
+
+### Confirmação de senha
+
+No cadastro, a senha e a confirmação são comparadas em tempo real.
+
+O campo recebe indicação visual conforme os valores:
+
+* Senhas diferentes → estado de erro;
+* Senhas iguais → estado de sucesso.
+
+O formulário também impede o envio quando as senhas não coincidem.
+
+### Como visualizar
+
+1. Abra `formulario/login.html` ou `formulario/criar conta.html`;
+2. Digite uma senha;
+3. Clique no ícone de olho;
+4. Observe a senha ser exibida/ocultada;
+5. No cadastro, preencha a senha e a confirmação;
+6. Digite valores diferentes;
+7. Observe o estado de erro;
+8. Digite valores iguais;
+9. Observe o estado de sucesso.
+
+---
+
+# 🧩 Tecnologias utilizadas
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat\&logo=html5\&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat\&logo=css3\&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat\&logo=javascript\&logoColor=black)
+
+| Tecnologia            | Utilização                                                 |
+| --------------------- | ---------------------------------------------------------- |
+| **HTML5**             | Estruturação das páginas e componentes da plataforma       |
+| **CSS3**              | Estilização, identidade visual, layouts e responsividade   |
+| **JavaScript (ES6+)** | Interatividade e atualização dinâmica da interface         |
+| **DOM**               | Seleção, criação e alteração de elementos em tempo real    |
+| **Font Awesome**      | Ícones utilizados na interface                             |
+| **Google Fonts**      | Tipografias Anton e Fira Sans                              |
+| **Bootstrap 5**       | Componentes utilizados pontualmente em `preferencias.html` |
+
+---
+
+# ▶️ Como visualizar o projeto
+
+## Opção 1 — Abrir localmente
+
+Baixe ou clone o repositório e abra o arquivo:
+
+```text
+index.html
+```
+
+Para uma experiência mais adequada durante o desenvolvimento, recomenda-se utilizar uma extensão ou servidor local, como o **Live Server** do Visual Studio Code.
+
+---
+
+## Opção 2 — GitHub Pages
+
+Quando o projeto estiver publicado, ele poderá ser acessado diretamente pelo GitHub Pages.
+
+**Link do projeto publicado:**
+
+> ⚠️ Inserir aqui o link atualizado do GitHub Pages após a publicação.
+
+---
+
+# 🧪 Como testar as principais funcionalidades
+
+Após abrir a página inicial, recomenda-se testar as interações na seguinte ordem:
+
+### Página inicial
+
+* [ ] Navegar pelas setas do carrossel;
+* [ ] Clicar nos indicadores do carrossel;
+* [ ] Verificar o loop infinito;
+* [ ] Rolar a página e verificar a navbar fixa.
+
+### Página do jogo
+
+* [ ] Clicar em uma imagem da galeria;
+* [ ] Abrir o vídeo;
+* [ ] Utilizar "Ver mais mídias";
+* [ ] Navegar usando as setas;
+* [ ] Navegar utilizando `←` e `→`;
+* [ ] Fechar a galeria com `Esc`;
+* [ ] Alternar entre "Sobre o jogo" e "Avaliações";
+* [ ] Curtir e não curtir avaliações;
+* [ ] Expandir e recolher a descrição;
+* [ ] Adicionar o jogo aos favoritos;
+* [ ] Adicionar o jogo ao carrinho;
+* [ ] Verificar as notificações exibidas.
+
+### Formulários
+
+* [ ] Abrir a tela de login;
+* [ ] Testar o botão de mostrar/ocultar senha;
+* [ ] Abrir a tela de cadastro;
+* [ ] Testar a confirmação de senha;
+* [ ] Verificar o feedback de senha correta/incorreta;
+* [ ] Tentar enviar o cadastro com senhas diferentes.
+
+---
+
+# 📈 Evolução do projeto
+
+### Sprint anterior
+
+O Iara Games possuía uma interface construída principalmente com **HTML e CSS**, com foco na estrutura, identidade visual e organização das páginas.
+
+A interface apresentava:
+
+* Página inicial;
+* Carrossel visual;
+* Vitrines de jogos;
+* Categorias;
+* Ofertas;
+* Página individual de jogo;
+* Login;
+* Cadastro;
+* Preferências.
+
+Entretanto, os elementos ainda não respondiam às ações do usuário.
+
+### Sprint atual
+
+Nesta Sprint, o projeto recebeu uma camada de **JavaScript e manipulação do DOM**, transformando a interface estática em uma experiência interativa.
+
+Foram implementados:
+
+* Carrossel funcional;
+* Navegação por indicadores;
+* Loop infinito;
+* Galeria de mídia;
+* Modais de imagem e vídeo;
+* Navegação por teclado;
+* Sistema de abas;
+* Avaliações interativas;
+* Curtidas e não curtidas;
+* Favoritos;
+* Carrinho;
+* Notificações;
+* Navbar fixa;
+* Expansão da descrição;
+* Mostrar/ocultar senha;
+* Validação de confirmação de senha.
+
+As interações respondem aos eventos do usuário sem a necessidade de recarregar a página.
+
+---
+
+# 🎯 Resultado
+
+A implementação do JavaScript permitiu que o Iara Games deixasse de ser apenas um conjunto de páginas estáticas e passasse a apresentar comportamentos semelhantes aos encontrados em plataformas reais de distribuição digital.
+
+A manipulação do DOM foi utilizada para selecionar, criar, modificar e atualizar elementos da interface em resposta a eventos como:
+
+```text
+click
+scroll
+input
+submit
+keydown
+transitionend
+```
+
+Dessa forma, cada interação foi desenvolvida com o objetivo de resolver um problema específico de usabilidade e fornecer **feedback visual imediato** ao usuário.
+
+---
+
+# 📚 Referências
+
+As principais referências utilizadas para pesquisa de linguagem visual, organização de lojas digitais e experiência do usuário foram:
+
+* [Steam](https://store.steampowered.com/)
+* [Nintendo eShop](https://www.nintendo.com/us/store/)
+* [PlayStation Store](https://www.playstation.com/pt-br/ps5/games/)
+* [Epic Games Store](https://store.epicgames.com/pt-BR/?lang=pt-BR)
+
+---
+
+# 👨‍💻 Repositório
+
+**GitHub:**
+
+> ⚠️ Inserir aqui o link atualizado do repositório após o commit desta Sprint.
+
+**Projeto publicado:**
+
+> ⚠️ Inserir aqui o link do GitHub Pages ou outra plataforma de publicação.
+
+---
+
+## 📌 Status do projeto
+
+**Concluído — Sprint de interatividade com JavaScript**
+
+O projeto atualmente conta com a estrutura visual desenvolvida em HTML/CSS e uma camada de interatividade implementada em JavaScript, utilizando manipulação do DOM e eventos do usuário.
+---
+
+# ⚛️ React no projeto
+
+O React foi incorporado ao Iara Games para montar as vitrines de jogos da página inicial e o conteúdo da página de catálogo. A integração utiliza **React 18.3.1** e **ReactDOM** carregados pela CDN do unpkg.
+
+Os componentes são criados com React.createElement, sem JSX. Os dados dos jogos e das seções ficam separados dos componentes, permitindo reutilizar a mesma estrutura visual em diferentes áreas da plataforma.
+
+## Componentes e páginas
+
+* **Vitrines da página inicial:** montagem de listas de jogos, jogos em destaque e ofertas;
+* **Página de catálogo (catalogo.html):** exibição de todos os jogos ou de uma seção escolhida;
+* **Filtros do catálogo:** links para alternar entre as seções disponíveis;
+* **Componentes reutilizáveis:** cartões de jogos, listas, blocos de catálogo e cartões de ofertas.
+
+Na página inicial, as regiões identificadas com data-catalogo são renderizadas pelo React. Na página catalogo.html, a seção identificada com data-pagina-catalogo recebe a página completa do catálogo. O parâmetro secao na URL permite abrir uma seção específica.
+
+## Arquivos relacionados
+
+javascript/catalogo/
+├── dados.js        # Dados dos jogos, vitrines e ofertas
+├── componentes.js  # Componentes reutilizáveis do catálogo
+├── montar.js       # Montagem das vitrines da página inicial
+└── pagina.js       # Montagem e filtros da página de catálogo
+
+As bibliotecas React e ReactDOM são incluídas nas páginas index.html e catalogo.html. A interface geral e as demais interações do projeto continuam utilizando HTML, CSS e JavaScript.
+
+### Como visualizar
+
+1. Inicie um servidor local na pasta do projeto, como o **Live Server** do Visual Studio Code;
+2. Abra index.html para ver as vitrines de produtos, ofertas e jogos gratuitos renderizadas pelo React;
+3. Abra catalogo.html para navegar pelo catálogo;
+4. Use os filtros ou os links **"Ver mais"** para acessar diferentes seções.
+
+Como React e ReactDOM são carregados pela CDN, é necessário estar conectado à internet para que as áreas feitas em React sejam exibidas.

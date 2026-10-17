@@ -12,44 +12,40 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/formulario/style.css">
 </head>
 <body>
-
   <a href="../Index.html" class="voltar">Voltar</a>
-
   <div class="form-card">
     <div class="logo-area">
-      <img src="../imgs/logo/logo.png" alt="IARA Logo">
+      <img src="../imgs/logo/logo_original.png" alt="IARA Logo">
       <span>IARA</span>
     </div>
-
     <p class="form-subtitle">Cadastre-se agora e desbloqueie um universo de jogos</p>
-
-    <form action="preferencias.html" method="get">
+    <form action="preferencias.html" method="get" id="cadastro-form">
       <div class="input-field">
         <input type="text" id="nickname" name="nickname" placeholder="Nickname" required>
         <i class="fa-regular fa-user field-icon"></i>
       </div>
-
       <div class="input-field">
         <input type="email" id="email" name="email" placeholder="E-mail" required>
         <i class="fa-regular fa-envelope field-icon"></i>
       </div>
-
       <div class="input-field">
-        <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6">
-        <i class="fa-regular fa-eye-slash field-icon"></i>
+        <input type="password" id="senha" name="senha" placeholder="Senha" minlength="6" required>
+        <i class="fa-regular fa-eye-slash field-icon toggle-password" data-target="senha" title="Mostrar senha"></i>
       </div>
-
-      <button type="submit" class="btn-primary">Proximo passo</button>
+      <div class="input-field">
+        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar senha" minlength="6" required>
+        <i class="fa-regular fa-eye-slash field-icon toggle-password" data-target="confirmar-senha" title="Mostrar senha"></i>
+      </div>
+      <button type="submit" class="btn-primary">Próximo passo</button>
     </form>
-
     <p class="form-footer">
       <span>Já possui uma conta?</span>
       <a href="login.html">Entrar</a>
     </p>
   </div>
-
+  <script src="/javascript/cadastro.js"></script>
 </body>
 </html>

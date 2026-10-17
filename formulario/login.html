@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/formulario/style.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
 
   <div class="form-card">
     <div class="logo-area">
-      <img src="../imgs/logo/logo.png" alt="IARA Logo">
+      <img src="../imgs/logo/logo_original.png" alt="IARA Logo">
       <span>IARA</span>
     </div>
 
@@ -34,7 +34,10 @@
 
       <div class="input-field">
         <input type="password" id="senha" name="senha" placeholder="Senha" required minlength="6">
-        <i class="fa-regular fa-eye-slash field-icon"></i>
+        <i
+          class="fa-regular fa-eye-slash field-icon toggle-password"
+          data-target="senha"
+        ></i>
       </div>
 
       <a href="#" class="forgot">Esqueceu a senha?</a>
@@ -47,6 +50,8 @@
       <a href="criar conta.html">Cadastrar</a>
     </p>
   </div>
+
+  <script src="/javascript/login.js"></script>
 
 </body>
 </html>

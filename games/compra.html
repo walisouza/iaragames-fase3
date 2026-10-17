@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página do Jogo</title>
 
+  <link rel="icon" type="image/png" href="/imgs/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/imgs/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/imgs/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/imgs/favicon/site.webmanifest">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="/games/compra.css">
 </head>
-<body>
 
+<body>
   <div class="background"></div>
 
   <a href="/index.html" class="back-button">
@@ -22,13 +28,11 @@
 
   <main class="content">
     <article class="game-container">
-
       <figure class="game-cover">
-        <img src="/games/capa.webp" alt="Capa do jogo">
+        <img src="/games/img/capa.webp" alt="Capa do jogo Dandy Ace">
       </figure>
 
       <section class="game-info">
-
         <header class="game-header">
           <h1>Dandy Ace</h1>
           <ul class="game-tags">
@@ -57,26 +61,43 @@
         </p>
 
         <div class="media-section">
-          <div class="media-video">
-            <video class="game-video" autoplay muted loop playsinline>
-              <source src="/games/gameplayvideo.mp4" type="video/mp4">
-            </video>
+          <div class="media-viewport">
+            <div class="media-track" id="media-track">
+              <div class="media-panel">
+                <div class="media-video">
+                  <video class="game-video" autoplay muted loop playsinline>
+                    <source src="/games/video/gameplay.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <div class="media-grid">
+                  <img src="/games/img/gameplay1.jpg" alt="Gameplay 1">
+                  <img src="/games/img/gameplay2.jpg" alt="Gameplay 2">
+                  <img src="/games/img/gameplay3.jpg" alt="Gameplay 3">
+                  <img src="/games/img/gameplay4.jpg" alt="Gameplay 4">
+                </div>
+              </div>
+
+              <div class="media-panel media-panel-extra" aria-hidden="true">
+                <div class="media-grid media-grid-extra">
+                  <img src="/games/img/gameplay5.jpg" alt="Gameplay 5">
+                  <img src="/games/img/gameplay6.jpg" alt="Gameplay 6">
+                  <img src="/games/img/gameplay7.jpg" alt="Gameplay 7">
+                  <img src="/games/img/gameplay8.jpg" alt="Gameplay 8">
+                  <img src="/games/img/gameplay9.jpg" alt="Gameplay 9">
+                  <img src="/games/img/gameplay10.jpg" alt="Gameplay 10">
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="media-grid">
-            <img src="/games/gameplay1.jpg" alt="Gameplay 1">
-            <img src="/games/gameplay2.jpg" alt="Gameplay 2">
-            <img src="/games/gameplay3.jpg" alt="Gameplay 3">
-            <img src="/games/gameplay4.jpg" alt="Gameplay 4">
-          </div>
-
-          <button class="media-more" aria-label="Ver mais mídias">
+          <button class="media-more" aria-label="Ver mais mídias" aria-expanded="false" aria-controls="media-track">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
 
         <div class="action-buttons">
-          <button class="buy-button">Comprar R$ 29,99</button>
+          <button class="buy-button">Comprar R$ 30,00</button>
           <button class="icon-button" aria-label="Adicionar ao carrinho">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
@@ -84,26 +105,31 @@
             <i class="fa-solid fa-heart"></i>
           </button>
         </div>
-
       </section>
     </article>
   </main>
 
   <nav class="bottom-navigation">
-    <span>Detalhes</span>
+    <span class="active">Detalhes</span>
     <span>Avaliações</span>
   </nav>
 
   <section class="details-section">
     <div class="details-container">
-
       <div class="details-box">
         <p class="details-text">
-          <strong>O que é Dandy Ace?</strong><br><br>
-          Dandy Ace é um roguelike com uma experiência de combate dinâmico e extravagante que segue um mágico fabuloso buscando combinar e usar suas cartas mágicas enquanto luta e saqueia para derrotar o Ilusionista de olhos verdes, Lele, que o aprisionou em um espelho amaldiçoado. Enquanto batalha pelo palácio que sempre muda de Lele, combine diferentes cartas com mais de mil possibilidades, cada uma com seus próprios estilos de jogo e poderes. Cada partida oferece novos desafios e combinações para os jogadores explorarem à medida que chegam mais perto de Lele.
+          <strong>O que é Dandy Ace?</strong>
+          <br><br>
+          Dandy Ace é um roguelike com uma experiência de combate dinâmico e extravagante que segue um mágico fabuloso buscando combinar e usar suas cartas mágicas enquanto luta e saqueia para derrotar o Ilusionista de olhos verdes, Lele, que o aprisionou em um espelho amaldiçoado.
+          <br><br>
+          Enquanto batalha pelo palácio que sempre muda de Lele, combine diferentes cartas com mais de mil possibilidades, cada uma com seus próprios estilos de jogo e poderes.
+          <br><br>
+          Cada partida oferece novos desafios e combinações para os jogadores explorarem à medida que chegam mais perto de Lele.
+          <br><br>
+          Jogue como Dandy Ace, o incrível herói, e sobreviva aos desafios do palácio extravagante, luxuoso e em constante mudança criado para derrotá-lo, cheio de criaturas bizarras e chefes ultrajantes. Encontre todas as cartas mágicas, reúna fragmentos de espelho e ouro e obtenha ajuda de seus assistentes e aliados não convencionais.
         </p>
         <div class="fade-overlay"></div>
-        <button class="read-more">Ler mais</button>
+        <button class="read-more">Ver mais</button>
       </div>
 
       <aside class="info-lateral">
@@ -125,13 +151,11 @@
           </div>
         </dl>
       </aside>
-
     </div>
   </section>
 
   <section class="requirements-section">
     <div class="requirements-container">
-
       <div class="requirements-box">
         <h3 class="requirements-title">Requisitos mínimos</h3>
         <div class="requirements-divider"></div>
@@ -193,19 +217,16 @@
           </div>
         </dl>
       </div>
-
     </div>
   </section>
 
   <section class="similar-section">
     <div class="similar-container">
-
       <h2 class="similar-title">Jogos semelhantes</h2>
-
       <ul class="similar-grid">
         <li class="similar-card">
           <figure class="similar-cover">
-            <img src="/games/unsighted.jpg" alt="Unsighted">
+            <img src="/games/img/unsighted.jpeg" alt="Unsighted">
           </figure>
           <div class="similar-info">
             <span class="similar-name">Unsighted</span>
@@ -214,7 +235,7 @@
         </li>
         <li class="similar-card">
           <figure class="similar-cover">
-            <img src="/games/retro.jpg" alt="Retro Machina">
+            <img src="/games/img/retro.jpeg" alt="Retro Machina">
           </figure>
           <div class="similar-info">
             <span class="similar-name">Retro Machina</span>
@@ -223,7 +244,7 @@
         </li>
         <li class="similar-card">
           <figure class="similar-cover">
-            <img src="/games/akane.jpg" alt="Akane">
+            <img src="/games/img/akane.jpg" alt="Akane">
           </figure>
           <div class="similar-info">
             <span class="similar-name">Akane</span>
@@ -232,16 +253,16 @@
         </li>
         <li class="similar-card">
           <figure class="similar-cover">
-            <img src="/games/rebels.jpg" alt="Relic Hunters: Rebels">
+            <img src="/games/img/relic.jpeg" alt="Relic Hunters: Legend">
           </figure>
           <div class="similar-info">
-            <span class="similar-name">Relic Hunters: Rebels</span>
-            <span class="similar-price">Grátis</span>
+            <span class="similar-name">Relic Hunters: Legend</span>
+            <span class="similar-price">R$ 17,00</span>
           </div>
         </li>
         <li class="similar-card">
           <figure class="similar-cover">
-            <img src="/games/clock.webp" alt="Hellclock">
+            <img src="/games/img/clock.webp" alt="Hellclock">
           </figure>
           <div class="similar-info">
             <span class="similar-name">Hellclock</span>
@@ -249,9 +270,9 @@
           </div>
         </li>
       </ul>
-
     </div>
   </section>
 
+  <script src="/javascript/game.js"></script>
 </body>
 </html>
